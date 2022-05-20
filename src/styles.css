@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeflex/primeflex.css";
+
+.bkgndLogin {
+	background-image: url("assets/backgroundLogin2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: right bottom;
+}
