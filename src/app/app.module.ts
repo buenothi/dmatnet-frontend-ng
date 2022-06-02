@@ -6,16 +6,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import { LoginComponent } from './login/login.component';
 
 import {DialogModule} from 'primeng/dialog';
 import {ButtonModule} from 'primeng/button';
 import {CheckboxModule} from 'primeng/checkbox';
+import { LoginComponent } from './login/login.component';
+import { DialogLoginComponent } from './login/dialog-login/dialog-login.component';
+import { MainModule } from './main/main.module';
+import { FormsModule } from '@angular/forms';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent
+    AppComponent
   ],
   imports: [
     HttpClientModule,
@@ -23,9 +26,12 @@ import {CheckboxModule} from 'primeng/checkbox';
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    DialogModule,
+    CheckboxModule,
     ButtonModule,
-    CheckboxModule
+    DialogModule,
+    LoginModule,
+    MainModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

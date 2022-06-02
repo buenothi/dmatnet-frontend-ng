@@ -13,8 +13,5 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.primengConfig.ripple = true;
   }
-  title = 'dmatnet-frontend-ng';
-
-  
-
+  title = 'DMATNET Web';
 }

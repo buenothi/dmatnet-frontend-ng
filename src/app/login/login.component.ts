@@ -1,26 +1,17 @@
-import { Component } from '@angular/core';
-import { Login } from '../shared/model/login.model';
-import { AuthServiceService } from '../shared/service/auth-service.service';
+import { Component, OnInit } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
 
-  login: Login;
+  constructor(private primengConfig: PrimeNGConfig) { }
 
-  constructor(
-    private authService: AuthServiceService,
-  ) {
-    this.login = new Login();
-    this.login.login = 'thiago_bueno';
-    this.login.senha = 'Tgb#6878';
-
+  ngOnInit(): void {
+    this.primengConfig.ripple = true;
   }
 
-  public auth() {
-    this.authService.postLogin(this.login).subscribe(result => {console.log(result.token)});
-  };
 }
