@@ -9,7 +9,20 @@ export class MenuModulosComponent implements OnInit {
 
   constructor() { }
 
+  cssMenuLateral = 'lateral';
+  menuBotao = 'logoMenu'
+
   ngOnInit(): void {
+  }
+
+  openMenu(): void {
+    if (this.cssMenuLateral == 'lateral') {
+      this.cssMenuLateral = 'lateralFixo'
+      this.menuBotao = 'logoMenuFixo'
+    } else {
+      this.cssMenuLateral = 'lateral'
+      this.menuBotao = 'logoMenu'
+    }
   }
 
 }
