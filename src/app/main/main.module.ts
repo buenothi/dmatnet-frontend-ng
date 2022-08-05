@@ -5,6 +5,8 @@ import { MainRoutingModule } from './main-routing.module';
 import { MainComponent } from './main.component';
 import { BarraPrincipalComponent } from './barra-principal/barra-principal.component';
 import { MenuModulosComponent } from './menu-modulos/menu-modulos.component';
+import { ButtonModule } from 'primeng/button';
+import {SidebarModule} from 'primeng/sidebar';
 
 
 @NgModule({
@@ -15,6 +17,8 @@ import { MenuModulosComponent } from './menu-modulos/menu-modulos.component';
   ],
   imports: [
     CommonModule,
+    ButtonModule,
+    SidebarModule,
     MainRoutingModule
   ]
 })

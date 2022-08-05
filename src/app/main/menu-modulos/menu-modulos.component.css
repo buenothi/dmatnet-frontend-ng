@@ -66,21 +66,6 @@
 .menuBotao {
     height: 55px;
     width: 200px;
-    background-color: rgb(96, 96, 98);
-    display: block;
-    color: white;
-    margin-top: 1px;
-    cursor: pointer;
-}
-
-.menuBotao:hover {
-    background-color: rgb(71, 131, 155);
-    color: white;
-}
-
-.menuBotao:active {
-    background-color: rgb(215, 215, 215);
-    color: black;
 }
 
 .menuBotaoSelecionado {
@@ -126,7 +111,7 @@
 .textoMenu {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 7.5pt;
+    font-size: 9pt;
     line-height: 30%;
     color: inherit;
     background-color: transparent;

@@ -1,5 +1,14 @@
 .bkgndMain {
-	background-color: white;
+    background-color: #1f2d40;
+    /* background-color: hsla(186, 100%, 19%, 1);
+    background-image:
+        radial-gradient(at 47% 76%, hsla(183, 100%, 16%, 1) 0px, transparent 50%),
+        radial-gradient(at 57% 97%, hsla(181, 100%, 14%, 1) 0px, transparent 50%),
+        radial-gradient(at 33% 47%, hsla(171, 98%, 25%, 1) 0px, transparent 50%),
+        radial-gradient(at 31% 26%, hsla(157, 48%, 50%, 1) 0px, transparent 50%),
+        radial-gradient(at 94% 90%, hsla(191, 100%, 11%, 1) 0px, transparent 50%),
+        radial-gradient(at 1% 63%, hsla(180, 97%, 14%, 1) 0px, transparent 50%),
+        radial-gradient(at 74% 57%, hsla(175, 91%, 10%, 1) 0px, transparent 50%); */
     padding: 0;
     margin: 0;
     height: 100%;

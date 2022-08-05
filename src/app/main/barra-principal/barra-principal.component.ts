@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
+import {ButtonModule} from 'primeng/button';
+import {SidebarModule} from 'primeng/sidebar';
 
 @Component({
   selector: 'app-barra-principal',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BarraPrincipalComponent implements OnInit {
 
-  constructor() { }
+  display:any;
+
+  constructor(private primengConfig: PrimeNGConfig) { }
 
   ngOnInit(): void {
+    this.primengConfig.ripple = true
   }
+
+  handleClick() {
+    //execute action
+}
 
 }

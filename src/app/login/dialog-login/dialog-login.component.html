@@ -1,13 +1,13 @@
-<p-dialog header="Title" [visible]="true" [closable]="false" [draggable]="false">
+<p-dialog header="Bem vindo ao smartEMS" [visible]="true" [closable]="false" [draggable]="false">
 
     <div class="flex align-items-center">
         <img src="../../assets/Logo SMARTEMS.jpg" style="margin-right: 20px" class="shadow-1" />
         <form (ngSubmit)="auth(f)" #f="ngForm">
             <div>
-                <label for="inLogin" class="block text-900 font-medium mb-2">Login</label>
+                <label i18n for="inLogin" class="block text-900 font-medium mb-2">Login</label>
                 <input id="inLogin" type="text" pInputText class="w-full mb-3" name="login" ngModel required>
 
-                <label for="inSenha" class="block text-900 font-medium mb-2">Password</label>
+                <label i18n for="inSenha" class="block text-900 font-medium mb-2">Password</label>
                 <input id="inSenha" type="password" pInputText class="w-full mb-3" name="senha" required ngModel>
 
                 <div class="flex align-items-center justify-content-between mb-2">

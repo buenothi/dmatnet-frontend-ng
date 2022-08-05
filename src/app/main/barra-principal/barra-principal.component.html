@@ -1,3 +1,19 @@
 <div id="barraPrincipal" class="superior">
     <div id="logoDMAT" class="logoDMAT"></div>
+    <div id="empresaSelecionada" class="empresaSelecionada">
+        <span>Empresa Selecionada</span>
+    </div>
+    <button pButton type="button" label="Selecionar Empresa" iconPos="right" icon="pi pi-building" class="botoesWebApp"
+        (click)="handleClick()"></button>
+    <div id="usuario" class="usuarioLogado">
+        <div id="fotoUsuario" class="usuarioFoto"></div>
+        <span class="textoUsuarioLogado">Usuário</span>
+        <button pButton type="button" label="Sair" iconPos="right" icon="pi pi-sign-out" class="botoesWebApp botaoSair"
+            (click)="handleClick()"></button>
+        <button pButton type="button" iconPos="right" icon="pi pi-chevron-circle-left" class="botaoSideBar"
+            (click)="display = true"></button>
+        <p-sidebar [(visible)]="display" position="right">
+            Content
+        </p-sidebar>
+    </div>
 </div>

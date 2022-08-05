@@ -9,8 +9,10 @@ export class MenuModulosComponent implements OnInit {
 
   constructor() { }
 
-  cssMenuLateral = 'lateral';
+  cssMenuLateral = 'lateral'
   menuBotao = 'logoMenu'
+  textoMenuBotao = 'Menu'
+  cssMenuBotao = 'botao menuBotao'
 
   ngOnInit(): void {
   }
@@ -19,9 +21,13 @@ export class MenuModulosComponent implements OnInit {
     if (this.cssMenuLateral == 'lateral') {
       this.cssMenuLateral = 'lateralFixo'
       this.menuBotao = 'logoMenuFixo'
+      this.textoMenuBotao = 'Desafixar Menu'
+      this.cssMenuBotao = 'botao menuBotaoSelecionado'
     } else {
       this.cssMenuLateral = 'lateral'
       this.menuBotao = 'logoMenu'
+      this.textoMenuBotao = 'Menu'
+      this.cssMenuBotao = 'botao menuBotao'
     }
   }
 
