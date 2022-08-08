@@ -1,8 +1,10 @@
-<div id="lateral" class={{cssMenuLateral}}>
+<nav id="lateral" class={{cssMenuLateral}}>
     <div id="btnMenu" class={{cssMenuBotao}} (click)='openMenu()'>
-        <div id={{menuBotao}} class="logosMenu"></div>
+        <div class="logoMenuPrincipal">
+            <i class="pi pi-bars"></i>
+        </div>
         <div id="rotuloMenu" class="rotuloMenu">
-            <span i18n class="textoMenu">{{textoMenuBotao}}</span>
+            <span i18n class="textoMenu">Módulos</span>
         </div>
     </div>
 
@@ -75,4 +77,4 @@
             <span i18n class="textoMenu">Treinamentos SST</span>
         </div>
     </div>
-</div>
+</nav>

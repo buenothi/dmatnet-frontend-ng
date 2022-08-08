@@ -1,90 +1,105 @@
 .superior {
-	background-color: rgb(36, 87, 69);
-	min-width: 910px;
-	width: 100%;
-	height: 42px;
-	top: 0;
-	position: fixed;
-	left: 0px;
-	right: 0px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
-	z-index: 1000;
+    background-color: rgb(36, 87, 69);
+    min-width: 910px;
+    width: 100%;
+    height: 42px;
+    top: 0;
+    display: flex;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 19%), 0 4px 8px 0 rgb(0 0 0 / 19%);
+    z-index: 1000;
+    vertical-align: middle;
 }
 
 .logoDMAT {
-	height: 90%;
+	height: 38px;
 	width: 200px;
 	background-image:
 		url("../assets/LogoDMATNET_vert.png");
-	background-size: cover;
-	float: left;
-	left: 0;
-	margin-top: 2px;
+	background-size: contain;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
 }
 
-.empresaSelecionada {
-	height:90%;
+.textoBarra {
+	height: 38px;
 	padding-left: 16px;
 	padding-right: 16px;
 	padding-top: 13px;
 	max-width: 300px;
-	float: left;
 	color: white;
 	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 10pt;
-	margin-top: 2px;
+	position: relative;
+	display: table-cell;
+}
+
+.botaoBarra {
+	height: inherit;
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.barraBotaoUsuario {
+	width: 140px;
+    height: inherit;
+    right: 0;
+    display: flex;
+    position: absolute;
 }
 
 .usuarioFoto {
-	height: 100%;
+	height: inherit;
 	width: 42px;
-	float: left;
+	position: relative;
+	display: table-cell;
 	background-image: url("../assets/imgSemFoto.jpg");
 	background-size: cover;
 }
 
 .usuarioLogado {
-	height: 100%;
-	width: 350px;
-	background-color: #5b5b5b;
-	border-left-style: solid;
-	border-left-color: rgb(255, 255, 255);
-	border-left-width: 1px;
-	margin: 0;
-	float: right;
-	right: 0;
-	z-index: 1000;
-	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	font-size: 8pt;
-	padding: 1px 5px 0px 0px;
+	height: inherit;
+    width: 350px;
+    background-color: #5b5b5b;
+    border-left-style: solid;
+    border-left-color: rgb(255, 255, 255);
+    border-left-width: 1px;
+    margin: 0;
+    right: 0;
+    z-index: 1000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 8pt;
+    position: fixed;
+    vertical-align: middle;
+    display: inline-flex;
 }
 
 .usuarioLogado .textoUsuarioLogado {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	font-size: 9pt;
-	margin: 10px;
-	float:left;
-	margin-top: 16px;
+    vertical-align: middle;
 }
 
 .botoesWebApp {
-	margin-top: 6px;
 	font-size: 10pt;
 	height: 30px;
-}
-
-.botaoSair {
-	margin-left: 107px;
+	position: relative;
+	vertical-align: middle;
+	margin: 5px;
 }
 
 .botaoSideBar {
-	margin-top: 6px;
-	margin-right: 2px;
 	font-size: 10pt;
 	height: 30px;
-	float: right;
+	position: relative;
+	vertical-align: middle;
+	margin: 5px;
 }

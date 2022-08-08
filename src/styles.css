@@ -11,9 +11,7 @@
 
 .botao {
     background-color: rgb(96, 96, 98);
-    display: block;
     color: white;
-    margin-top: 1px;
     cursor: pointer;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
@@ -25,5 +23,5 @@
 
 .botao:active {
     background-color: rgb(215, 215, 215);
-    color: black;
+    color:  #212529;
 }
