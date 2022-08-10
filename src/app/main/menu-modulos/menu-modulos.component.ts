@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MainComponent } from '../main.component';
 
 @Component({
   selector: 'app-menu-modulos',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuModulosComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private mainComponent:MainComponent
+  ) { }
 
   cssMenuLateral = 'lateral'
   menuBotao = 'logoMenu'
@@ -23,11 +26,13 @@ export class MenuModulosComponent implements OnInit {
       this.menuBotao = 'logoMenuFixo'
       this.textoMenuBotao = 'Desafixar Menu'
       this.cssMenuBotao = 'botao menuBotaoSelecionado'
+      this.mainComponent.changeConteudo()
     } else {
       this.cssMenuLateral = 'lateral'
       this.menuBotao = 'logoMenu'
       this.textoMenuBotao = 'Menu'
       this.cssMenuBotao = 'botao menuBotao'
+      this.mainComponent.changeConteudo()
     }
   }
 

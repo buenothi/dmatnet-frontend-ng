@@ -6,7 +6,8 @@ import { MainComponent } from './main.component';
 import { BarraPrincipalComponent } from './barra-principal/barra-principal.component';
 import { MenuModulosComponent } from './menu-modulos/menu-modulos.component';
 import { ButtonModule } from 'primeng/button';
-import {SidebarModule} from 'primeng/sidebar';
+import { SidebarModule } from 'primeng/sidebar';
+import { PanelModule } from 'primeng/panel';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import {SidebarModule} from 'primeng/sidebar';
     CommonModule,
     ButtonModule,
     SidebarModule,
+    PanelModule,
     MainRoutingModule
   ]
 })

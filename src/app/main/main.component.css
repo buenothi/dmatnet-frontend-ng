@@ -18,3 +18,23 @@
     right: 0px;
     position: fixed;
 }
+
+.conteudo {
+	padding: 42px 0 0 56px !important;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	overflow: auto;
+	font-size: 10pt;
+	min-width: 1200px;
+}
+
+.conteudoFixo {
+	padding: 42px 0 0 200px !important;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	overflow: auto;
+	font-size: 10pt;
+	min-width: 1200px;
+}
