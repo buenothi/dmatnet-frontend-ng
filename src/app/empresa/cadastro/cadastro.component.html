@@ -1,34 +1,29 @@
 <p-panel header="Dados Cadastrais">
-    <div style="margin-bottom: 20px;">
-        <p-toolbar>
-            <div class="p-toolbar-group-left">
-                <p-button label="Editar" icon="pi pi-pencil" class="botoesMenu" [disabled]=true></p-button>
-                <p-button label="Cancelar" icon="pi pi-times" class="botoesMenu" [disabled]=true></p-button>
-                <p-button label="Salvar Alterações" icon="pi pi-save" class="botoesMenu" [disabled]=true></p-button>
-                <p-button label="Novo" icon="pi pi-plus" class="botoesMenu"></p-button>
-            </div>
-
-            <div class="p-toolbar-group-right">
-                <p-button icon="pi pi-print" styleClass="p-button-success" class="botoesMenu"></p-button>
-                <p-button icon="pi pi-times" styleClass="p-button-danger" class="botoesMenu"></p-button>
-            </div>
-        </p-toolbar>
-    </div>
+    <app-toolbar></app-toolbar>
     <p-accordion>
-        <p-accordionTab header="Dados Atuais">
-            <span class="p-float-label">
-                <p-calendar [showButtonBar]="true"></p-calendar>
-                <label for="float-input">Data do Cadastro</label>
-            </span>
-
-            <span class="p-float-label">
-                <p-inputMask mask="99.999.999/9999-99"></p-inputMask>
-                <label for="float-input">CNPJ</label>
-            </span>
-            <span class="p-float-label">
-                <input id="float-input" type="text" pInputText [size]="60"> 
-                <label for="float-input">Razão Social</label>
-            </span>
+        <p-accordionTab header="Dados Atuais" [selected]="true">
+            <div class="card">
+                <div class="field grid">
+                    <label for="float-input" class="col-12 mb-2 md:col-2 md:mb-0">Data do Cadastro</label>
+                    <p-calendar [showButtonBar]="true"></p-calendar>
+                </div>
+                <div class="field grid">
+                    <label for="float-input" class="col-12 mb-2 md:col-2 md:mb-0">Tipo de Registro</label>
+                    <p-dropdown></p-dropdown>
+                </div>
+                <div class="field grid">
+                    <label for="float-input" class="col-12 mb-2 md:col-2 md:mb-0">CNPJ</label>
+                    <p-inputMask mask="99.999.999/9999-99"></p-inputMask>
+                </div>
+                <div class="field grid">
+                    <label for="float-input" class="col-12 mb-2 md:col-2 md:mb-0">Razão Social</label>
+                    <input id="float-input" type="text" pInputText [size]="60">
+                </div>
+                <div class="field grid">
+                    <label for="float-input" class="col-12 mb-2 md:col-2 md:mb-0">FAP</label>
+                    <input id="float-input" type="text" pInputText [size]="5">
+                </div>
+            </div>
         </p-accordionTab>
         <p-accordionTab header="Histórico">
 

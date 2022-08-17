@@ -11,6 +11,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { InputMaskModule } from 'primeng/inputmask';
 import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
+import { CustomsComponentsModule } from '../shared/customs-components/customs-components.module';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { DropdownModule } from 'primeng/dropdown';
     InputTextModule,
     InputMaskModule,
     CalendarModule,
-    DropdownModule
+    DropdownModule,
+    CustomsComponentsModule
   ]
 })
 export class EmpresaModule { }
