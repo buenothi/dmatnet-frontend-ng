@@ -1,10 +1,10 @@
 <div style="margin-bottom: 20px;">
     <p-toolbar>
         <div class="p-toolbar-group-left">
-            <p-button label="Editar" icon="pi pi-pencil" class="botoesMenu" [disabled]=true></p-button>
-            <p-button label="Cancelar" icon="pi pi-times" class="botoesMenu" [disabled]=true></p-button>
-            <p-button label="Salvar Alterações" icon="pi pi-save" class="botoesMenu" [disabled]=true></p-button>
-            <p-button label="Novo" icon="pi pi-plus" class="botoesMenu"></p-button>
+            <p-button label="Editar" icon="pi pi-pencil" class="botoesMenu" [disabled]="editarDisabled"></p-button>
+            <p-button label="Cancelar" icon="pi pi-times" class="botoesMenu" [disabled]="cancelarDisabled"></p-button>
+            <p-button label="Salvar Alterações" icon="pi pi-save" class="botoesMenu" [disabled]="salvarDisabled"></p-button>
+            <p-button label="Novo" icon="pi pi-plus" class="botoesMenu" [disabled]="novoDisabled"></p-button>
         </div>
 
         <div class="p-toolbar-group-right">

@@ -12,12 +12,16 @@ import { InputMaskModule } from 'primeng/inputmask';
 import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
 import { CustomsComponentsModule } from '../shared/customs-components/customs-components.module';
+import { FormEditarComponent } from './cadastro/form-editar/form-editar.component';
+import { FormExibirComponent } from './cadastro/form-exibir/form-exibir.component';
 
 
 @NgModule({
   declarations: [
     EmpresaFormComponent,
-    CadastroComponent
+    CadastroComponent,
+    FormExibirComponent,
+    FormEditarComponent
   ],
   imports: [
     AccordionModule,

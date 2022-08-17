@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
+  editarDisabled = true;
+  cancelarDisabled = true;
+  salvarDisabled = true;
+  novoDisabled = false;
+
   constructor() { }
 
   ngOnInit(): void {

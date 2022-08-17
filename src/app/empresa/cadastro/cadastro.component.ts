@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
+  isEditarForm = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  editarCadastro(): void {
+    this.isEditarForm ? this.isEditarForm = false : this.isEditarForm = true;
   }
 
 }

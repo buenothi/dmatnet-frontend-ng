@@ -2,31 +2,10 @@
     <app-toolbar></app-toolbar>
     <p-accordion>
         <p-accordionTab header="Dados Atuais" [selected]="true">
-            <div class="card">
-                <div class="field grid">
-                    <label for="float-input" class="col-12 mb-2 md:col-2 md:mb-0">Data do Cadastro</label>
-                    <p-calendar [showButtonBar]="true"></p-calendar>
-                </div>
-                <div class="field grid">
-                    <label for="float-input" class="col-12 mb-2 md:col-2 md:mb-0">Tipo de Registro</label>
-                    <p-dropdown></p-dropdown>
-                </div>
-                <div class="field grid">
-                    <label for="float-input" class="col-12 mb-2 md:col-2 md:mb-0">CNPJ</label>
-                    <p-inputMask mask="99.999.999/9999-99"></p-inputMask>
-                </div>
-                <div class="field grid">
-                    <label for="float-input" class="col-12 mb-2 md:col-2 md:mb-0">Razão Social</label>
-                    <input id="float-input" type="text" pInputText [size]="60">
-                </div>
-                <div class="field grid">
-                    <label for="float-input" class="col-12 mb-2 md:col-2 md:mb-0">FAP</label>
-                    <input id="float-input" type="text" pInputText [size]="5">
-                </div>
-            </div>
+            <app-form-editar *ngIf="isEditarForm"></app-form-editar>
+            <app-form-exibir *ngIf="!isEditarForm"></app-form-exibir>
         </p-accordionTab>
         <p-accordionTab header="Histórico">
-
         </p-accordionTab>
     </p-accordion>
 </p-panel>
