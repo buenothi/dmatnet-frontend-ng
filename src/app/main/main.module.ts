@@ -8,6 +8,7 @@ import { MenuModulosComponent } from './menu-modulos/menu-modulos.component';
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { PanelModule } from 'primeng/panel';
+import { DialogModule } from 'primeng/dialog';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { PanelModule } from 'primeng/panel';
     ButtonModule,
     SidebarModule,
     PanelModule,
+    DialogModule,
     MainRoutingModule
   ]
 })

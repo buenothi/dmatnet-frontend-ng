@@ -5,8 +5,8 @@
             <span>Empresa Selecionada</span>
         </div>
         <div class="botaoBarra">
-            <button pButton type="button" iconPos="right" icon="pi pi-building"
-                class="botoesWebApp" (click)="handleClick()"></button>
+            <button pButton type="button" iconPos="right" icon="pi pi-building" class="botoesWebApp"
+                (click)="showDialog()"></button>
         </div>
     </div>
     <div id="usuario" class="usuarioLogado">
@@ -15,13 +15,16 @@
             <span class="textoUsuarioLogado">Usuário</span>
         </div>
         <div class="barraBotaoUsuario">
-            <button pButton type="button" label="Sair" iconPos="right" icon="pi pi-sign-out" class="botoesWebApp p-button-danger"
-                (click)="handleClick()"></button>
+            <button pButton type="button" label="Sair" iconPos="right" icon="pi pi-sign-out"
+                class="botoesWebApp p-button-danger"></button>
             <button pButton type="button" iconPos="right" icon="pi pi-chevron-circle-left" class="botaoSideBar"
                 (click)="display = true"></button>
         </div>
     </div>
-    <p-sidebar [(visible)]="display" position="right">
-        Content
-    </p-sidebar>
 </div>
+<p-sidebar [(visible)]="display" position="right" style="z-index:1000" [modal]="false">
+    Content
+</p-sidebar>
+<p-dialog header="Title" [(visible)]="dialog" [modal]="true">
+    Content
+</p-dialog>

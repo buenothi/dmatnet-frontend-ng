@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
-import {ButtonModule} from 'primeng/button';
-import {SidebarModule} from 'primeng/sidebar';
+
 
 @Component({
   selector: 'app-barra-principal',
@@ -11,6 +10,8 @@ import {SidebarModule} from 'primeng/sidebar';
 export class BarraPrincipalComponent implements OnInit {
 
   display:any;
+  dialog:any
+  showDialogdisplay: boolean = false;
 
   constructor(private primengConfig: PrimeNGConfig) { }
 
@@ -18,8 +19,8 @@ export class BarraPrincipalComponent implements OnInit {
     this.primengConfig.ripple = true
   }
 
-  handleClick() {
-    //execute action
-}
+  showDialog() {
+      this.dialog = true;
+  }
 
 }
