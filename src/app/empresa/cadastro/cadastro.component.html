@@ -1,5 +1,5 @@
 <p-panel header="Dados Cadastrais">
-    <app-toolbar></app-toolbar>
+    <app-toolbar [printButtonHidden]=false></app-toolbar>
     <p-accordion>
         <p-accordionTab header="Dados Atuais" [selected]="true">
             <app-form-editar *ngIf="isEditarForm"></app-form-editar>

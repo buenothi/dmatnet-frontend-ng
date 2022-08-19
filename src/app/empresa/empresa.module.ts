@@ -14,6 +14,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { CustomsComponentsModule } from '../shared/customs-components/customs-components.module';
 import { FormEditarComponent } from './cadastro/form-editar/form-editar.component';
 import { FormExibirComponent } from './cadastro/form-exibir/form-exibir.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { FormExibirComponent } from './cadastro/form-exibir/form-exibir.componen
     InputMaskModule,
     CalendarModule,
     DropdownModule,
-    CustomsComponentsModule
+    CustomsComponentsModule,
+    FormsModule
   ]
 })
 export class EmpresaModule { }

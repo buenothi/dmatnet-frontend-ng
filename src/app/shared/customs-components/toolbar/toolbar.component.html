@@ -1,15 +1,23 @@
 <div style="margin-bottom: 20px;">
     <p-toolbar>
         <div class="p-toolbar-group-left">
-            <p-button label="Editar" icon="pi pi-pencil" class="botoesMenu" [disabled]="editarDisabled"></p-button>
-            <p-button label="Cancelar" icon="pi pi-times" class="botoesMenu" [disabled]="cancelarDisabled"></p-button>
-            <p-button label="Salvar Alterações" icon="pi pi-save" class="botoesMenu" [disabled]="salvarDisabled"></p-button>
-            <p-button label="Novo" icon="pi pi-plus" class="botoesMenu" [disabled]="novoDisabled"></p-button>
+            <p-button label="Editar" icon="pi pi-pencil" class="botoesMenu" [disabled]="editarDisabled"
+                (onClick)="onEditarClick()"></p-button>
+            <p-button label="Cancelar" icon="pi pi-times" class="botoesMenu" [disabled]="cancelarDisabled"
+                (onClick)="onCancelarClick()"></p-button>
+            <p-button label="Salvar Alterações" icon="pi pi-save" class="botoesMenu" [disabled]="salvarDisabled"
+                (onClick)="onSalvarClick()">
+            </p-button>
+            <p-button label="Novo" icon="pi pi-plus" class="botoesMenu" [disabled]="novoDisabled"
+                (onClick)="onNovoClick()"></p-button>
         </div>
 
         <div class="p-toolbar-group-right">
-            <p-button icon="pi pi-print" styleClass="p-button-success" class="botoesMenu"></p-button>
-            <p-button icon="pi pi-times" styleClass="p-button-danger" class="botoesMenu"></p-button>
+            <p-button icon="pi pi-print" styleClass="p-button-success" class="botoesMenu" [disabled]="printDisabled"
+                [hidden]="printButtonHidden" (onClick)="onPrintClick()"></p-button>
+            <p-button icon="pi pi-times" styleClass="p-button-danger" class="botoesMenu" [disabled]="deleteDisabled"
+                (onClick)="onDeleteClick()">
+            </p-button>
         </div>
     </p-toolbar>
 </div>
