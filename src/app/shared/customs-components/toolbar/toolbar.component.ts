@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-toolbar',
@@ -28,33 +28,51 @@ export class ToolbarComponent implements OnInit {
   @Input()
   deleteDisabled = true;
 
+  @Output()
+  editarClickEvent = new EventEmitter();
+
+  @Output()
+  cancelarClickEvent = new EventEmitter();
+
+  @Output()
+  salvarClickEvent = new EventEmitter();
+
+  @Output()
+  novoClickEvent = new EventEmitter();
+
+  @Output()
+  printClickEvent = new EventEmitter();
+
+  @Output()
+  deleteClickEvent = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
   onEditarClick(): void {
-    alert("editar foi clicado");
+    this.editarClickEvent.emit("editar");
   }
 
   onCancelarClick(): void {
-    alert("cancelar foi clicado");
+    this.cancelarClickEvent.emit("cancelar");
   }
 
   onSalvarClick(): void {
-    alert("salvar foi clicado");
+    this.salvarClickEvent.emit("salvar");
   }
 
   onNovoClick(): void {
-    alert("novo foi clicado");
+    this.novoClickEvent.emit("novo");
   }
 
   onPrintClick(): void{
-    alert("print foi clicado");
+    this.printClickEvent.emit("print");
   }
 
   onDeleteClick(): void{
-    alert("delete foi clicado");
+    this.deleteClickEvent.emit("delete");
   }
 
 }
