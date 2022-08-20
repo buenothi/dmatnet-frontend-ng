@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpresaFormComponent implements OnInit {
 
+  disableTabCadastro = false;
+  disableTabEndereco = false;
+  disableTabContato = false;
+
   constructor() { }
 
   ngOnInit(): void {

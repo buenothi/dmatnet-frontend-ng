@@ -1,12 +1,12 @@
 <div>
     <p-tabView>
-        <p-tabPanel  header="Cadastro">
+        <p-tabPanel  header="Cadastro" [disabled]="disableTabCadastro">
             <app-cadastro></app-cadastro>
         </p-tabPanel>
-        <p-tabPanel header="Header 2" [disabled]="true">
+        <p-tabPanel header="Endereço" [disabled]="disableTabContato">
             Content 2
         </p-tabPanel>
-        <p-tabPanel header="Header 3">
+        <p-tabPanel header="Contato" [disabled]="disableTabEndereco">
             Content 3
         </p-tabPanel>
     </p-tabView>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
+import { EmpresaFormComponent } from '../empresa-form/empresa-form.component';
 
 @Component({
   selector: 'app-cadastro',
@@ -15,7 +16,10 @@ export class CadastroComponent implements OnInit {
   isPrintButtonDisabled = true;
   isDeleteButtonDisabled = true;
 
-  constructor() { }
+  constructor(
+    private empresaForm: EmpresaFormComponent
+  ) {
+  }
 
   ngOnInit(): void {
   }
@@ -24,36 +28,44 @@ export class CadastroComponent implements OnInit {
     this.isEditarForm ? this.isEditarForm = false : this.isEditarForm = true;
   }
 
-  onNovoClick():void {
+  onNovoClick(): void {
     this.isEditarForm = true;
     this.isCancelarButtonDisabled = false;
     this.isSalvarButtonDisabled = false;
     this.isNovoButtonDisabled = true;
     this.isDeleteButtonDisabled = false;
+    this.empresaForm.disableTabContato = true;
+    this.empresaForm.disableTabEndereco = true;
   }
 
-  onCancelarClick():void {
+  onCancelarClick(): void {
     this.isEditarForm = false;
     this.isCancelarButtonDisabled = true;
     this.isSalvarButtonDisabled = true;
     this.isNovoButtonDisabled = false;
     this.isDeleteButtonDisabled = true;
+    this.empresaForm.disableTabContato = false;
+    this.empresaForm.disableTabEndereco = false;
   }
 
-  onSalvarClick():void {
+  onSalvarClick(): void {
     this.isEditarForm = false;
     this.isCancelarButtonDisabled = true;
     this.isSalvarButtonDisabled = true;
     this.isNovoButtonDisabled = false;
     this.isDeleteButtonDisabled = true;
+    this.empresaForm.disableTabContato = false;
+    this.empresaForm.disableTabEndereco = false;
   }
 
-  onDeleteClick():void {
+  onDeleteClick(): void {
     this.isEditarForm = false;
     this.isCancelarButtonDisabled = true;
     this.isSalvarButtonDisabled = true;
     this.isNovoButtonDisabled = false;
     this.isDeleteButtonDisabled = true;
+    this.empresaForm.disableTabContato = false;
+    this.empresaForm.disableTabEndereco = false;
   }
 
 }
