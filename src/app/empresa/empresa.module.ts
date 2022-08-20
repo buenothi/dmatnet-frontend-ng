@@ -15,6 +15,9 @@ import { CustomsComponentsModule } from '../shared/customs-components/customs-co
 import { FormEditarComponent } from './cadastro/form-editar/form-editar.component';
 import { FormExibirComponent } from './cadastro/form-exibir/form-exibir.component';
 import { FormsModule } from '@angular/forms';
+import { EnderecoComponent } from './endereco/endereco.component';
+import { ContatoComponent } from './contato/contato.component';
+import { EstabelecimentoComponent } from './estabelecimento/estabelecimento.component';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { FormsModule } from '@angular/forms';
     EmpresaFormComponent,
     CadastroComponent,
     FormExibirComponent,
-    FormEditarComponent
+    FormEditarComponent,
+    EnderecoComponent,
+    ContatoComponent,
+    EstabelecimentoComponent
   ],
   imports: [
     AccordionModule,

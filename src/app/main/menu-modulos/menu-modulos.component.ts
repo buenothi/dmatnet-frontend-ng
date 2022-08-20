@@ -17,7 +17,7 @@ export class MenuModulosComponent implements OnInit {
   textoMenuBotao = 'Menu'
 
   cssBtnMenu = 'botao menuBotao'
-  cssBtnHome = 'botao menuBotao'
+  cssBtnHome = 'botao menuBotaoSelecionado'
   cssBtnEmpresa = 'botao menuBotao'
   cssBtnUsuario = 'botao menuBotao'
   cssBtnRegAmbiental = 'botao menuBotao'
@@ -29,7 +29,7 @@ export class MenuModulosComponent implements OnInit {
   cssBtnTreinamento = 'botao menuBotao'
 
   ngOnInit(): void {
-    this.cssBtnHome = 'botao menuBotao'
+    this.cssBtnHome = 'botao menuBotaoSelecionado'
     this.cssBtnEmpresa = 'botao menuBotao'
     this.cssBtnUsuario = 'botao menuBotao'
     this.cssBtnRegAmbiental = 'botao menuBotao'
@@ -46,7 +46,7 @@ export class MenuModulosComponent implements OnInit {
       this.cssMenuLateral = 'lateralFixo'
       this.menuBotao = 'logoMenuFixo'
       this.textoMenuBotao = 'Desafixar Menu'
-      this.cssBtnMenu = 'botao menuBotaoSelecionado'
+      this.cssBtnMenu = 'botao menuBotaoMenuSelecionado'
       this.mainComponent.changeConteudo()
     } else {
       this.cssMenuLateral = 'lateral'
@@ -65,38 +65,47 @@ export class MenuModulosComponent implements OnInit {
         break;
       case 'empresa':
         this.ngOnInit();
+        this.cssBtnHome = 'botao menuBotao'
         this.cssBtnEmpresa = 'botao menuBotaoSelecionado';
         break;
       case 'usuario':
         this.ngOnInit();
+        this.cssBtnHome = 'botao menuBotao'
         this.cssBtnUsuario = 'botao menuBotaoSelecionado';
         break;
       case 'ambiental':
         this.ngOnInit();
+        this.cssBtnHome = 'botao menuBotao'
         this.cssBtnRegAmbiental = 'botao menuBotaoSelecionado';
         break;
       case 'saude':
         this.ngOnInit();
+        this.cssBtnHome = 'botao menuBotao'
         this.cssBtnSaudeTrabalho = 'botao menuBotaoSelecionado';
         break;
       case 'documentos':
         this.ngOnInit();
+        this.cssBtnHome = 'botao menuBotao'
         this.cssBtnDocLegais = 'botao menuBotaoSelecionado';
         break;
       case 'acidente':
         this.ngOnInit();
+        this.cssBtnHome = 'botao menuBotao'
         this.cssBtnAcidentes = 'botao menuBotaoSelecionado';
         break;
       case 'eqpto':
         this.ngOnInit();
+        this.cssBtnHome = 'botao menuBotao'
         this.cssBtnEqProtecao = 'botao menuBotaoSelecionado';
         break;
       case 'ferramentas':
         this.ngOnInit();
+        this.cssBtnHome = 'botao menuBotao'
         this.cssBtnFerramentas = 'botao menuBotaoSelecionado';
         break;
       case 'treinamento':
         this.ngOnInit();
+        this.cssBtnHome = 'botao menuBotao'
         this.cssBtnTreinamento = 'botao menuBotaoSelecionado';
         break;
     }
