@@ -9,19 +9,6 @@
 	background-position: right bottom;
 }
 
-.botao {
-    background-color: rgb(96, 96, 98);
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
-}
-
-.botao:hover {
-    background-color: #81C784;
-    color: #212529
-}
-
-.botao:active {
-    background-color: rgb(215, 215, 215);
-    color:  #212529;
+.formsExibirDados {
+    height: 30px;
 }

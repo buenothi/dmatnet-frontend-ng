@@ -1,5 +1,5 @@
 <nav id="lateral" class={{cssMenuLateral}}>
-    <div id="btnMenu" class={{cssMenuBotao}} (click)='openMenu()'>
+    <div id="btnMenu" class={{cssBtnMenu}} (click)='openMenu()'>
         <div class="logoMenuPrincipal">
             <i class="pi pi-bars"></i>
         </div>
@@ -8,70 +8,70 @@
         </div>
     </div>
 
-    <div id="btnHome" class="botao menuBotao" routerLink="/main">
+    <div id="btnHome" class={{cssBtnHome}} routerLink="/main" (click)="onClickBtn('home')">
         <div id="logoHome" class="logosMenu"></div>
         <div id="rotuloCadEmpresas" class="rotuloMenu">
             <span i18n class="textoMenu">Home</span>
         </div>
     </div>
 
-    <div id="btnCadastroEmpresa" class="botao menuBotao" routerLink="/main/empresa">
+    <div id="btnCadastroEmpresa" class={{cssBtnEmpresa}} routerLink="/main/empresa" (click)="onClickBtn('empresa')">
         <div id="logoCadEmpresa" class="logosMenu"></div>
         <div id="rotuloCadEmpresas" class="rotuloMenu">
             <span i18n class="textoMenu">Empresa</span>
         </div>
     </div>
 
-    <div id="itemCadUsuarios" class="botao menuBotao">
+    <div id="itemCadUsuarios" class={{cssBtnUsuario}} (click)="onClickBtn('usuario')">
         <div id="logoCadUsuarios" class="logosMenu"></div>
         <div id="rotuloCadUsuarios" class="rotuloMenu">
             <span i18n class="textoMenu">Empregado</span>
         </div>
     </div>
 
-    <div id="itemRegAmbientais" class="botao menuBotao">
+    <div id="itemRegAmbientais" class={{cssBtnRegAmbiental}} (click)="onClickBtn('ambiental')">
         <div id="logoRegAmbientais" class="logosMenu"></div>
         <div id="rotuloRegAmbientais" class="rotuloMenu">
             <span i18n class="textoMenu">Registros Ambientais</span>
         </div>
     </div>
 
-    <div id="itemSaudeTrabalho" class="botao menuBotao">
+    <div id="itemSaudeTrabalho" class={{cssBtnSaudeTrabalho}} (click)="onClickBtn('saude')">
         <div id="logoSaudeTrabalho" class="logosMenu"></div>
         <div id="rotuloSaudeTrabalho" class="rotuloMenu">
             <span i18n class="textoMenu">Saúde do Trabalhador</span>
         </div>
     </div>
 
-    <div id="itemDocLegais" class="botao menuBotao">
+    <div id="itemDocLegais" class={{cssBtnDocLegais}} (click)="onClickBtn('documentos')">
         <div id="logoDocLegais" class="logosMenu"></div>
         <div id="rotuloDocLegais" class="rotuloMenu">
             <span i18n class="textoMenu">Documentos Legais</span>
         </div>
     </div>
 
-    <div id="itemAcidentes" class="botao menuBotao">
+    <div id="itemAcidentes" class={{cssBtnAcidentes}} (click)="onClickBtn('acidente')">
         <div id="logoAcidentes" class="logosMenu"></div>
         <div id="rotuloAcidentes" class="rotuloMenu">
             <span i18n class="textoMenu">Acidentes do Trabalho</span>
         </div>
     </div>
 
-    <div id="itemEquiptosProtecao" class="botao menuBotao">
+    <div id="itemEquiptosProtecao" class={{cssBtnEqProtecao}} (click)="onClickBtn('eqpto')">
         <div id="logoEquiptosProtecao" class="logosMenu"></div>
         <div id="rotuloEquiptosProtecao" class="rotuloMenu">
             <span i18n class="textoMenu">EPI/PC</span>
         </div>
     </div>
 
-    <div id="itemFerramentas" class="botao menuBotao">
+    <div id="itemFerramentas" class={{cssBtnFerramentas}} (click)="onClickBtn('ferramentas')">
         <div id="logoFerramentas" class="logosMenu"></div>
         <div id="rotuloFerramentas" class="rotuloMenu">
             <span i18n class="textoMenu">Ferramentas</span>
         </div>
     </div>
 
-    <div id="itemTreinamento" class="botao menuBotao">
+    <div id="itemTreinamento" class={{cssBtnTreinamento}} (click)="onClickBtn('treinamento')">
         <div id="logoTreinamento" class="logosMenu"></div>
         <div id="rotuloTreinmento" class="rotuloMenu">
             <span i18n class="textoMenu">Treinamentos SST</span>

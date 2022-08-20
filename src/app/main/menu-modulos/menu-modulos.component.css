@@ -63,6 +63,23 @@
 	width: 200px;
 }
 
+.botao {
+    background-color: rgb(96, 96, 98);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.botao:hover {
+    background-color: #81C784;
+    color: #212529
+}
+
+.botao:active {
+    background-color: #3c3c3c;
+    color:  white;
+}
+
 .menuBotao {
     height: 55px;
     width: 200px;
@@ -75,8 +92,8 @@
     width: 200px;
     margin-top: 1px;
     margin-bottom: 1px;
-    background-color: #3c3c3c;
-    color: white;
+    background-color: rgb(215, 215, 215);
+    color: #3c3c3c;
     cursor: pointer;
 }
 
