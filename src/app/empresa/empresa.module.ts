@@ -12,23 +12,27 @@ import { InputMaskModule } from 'primeng/inputmask';
 import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
 import { CustomsComponentsModule } from '../shared/customs-components/customs-components.module';
-import { FormEditarComponent } from './cadastro/form-editar/form-editar.component';
-import { FormExibirComponent } from './cadastro/form-exibir/form-exibir.component';
+import { CadFormEditarComponent } from './cadastro/cad-form-editar/cad-form-editar.component';
+import { CadFormExibirComponent } from './cadastro/cad-form-exibir/cad-form-exibir.component';
 import { FormsModule } from '@angular/forms';
 import { EnderecoComponent } from './endereco/endereco.component';
 import { ContatoComponent } from './contato/contato.component';
 import { EstabelecimentoComponent } from './estabelecimento/estabelecimento.component';
+import { EndFormExibirComponent } from './endereco/end-form-exibir/end-form-exibir.component';
+import { EndFormEditarComponent } from './endereco/end-form-editar/end-form-editar.component';
 
 
 @NgModule({
   declarations: [
     EmpresaFormComponent,
     CadastroComponent,
-    FormExibirComponent,
-    FormEditarComponent,
     EnderecoComponent,
     ContatoComponent,
-    EstabelecimentoComponent
+    EstabelecimentoComponent,
+    CadFormEditarComponent,
+    CadFormExibirComponent,
+    EndFormExibirComponent,
+    EndFormEditarComponent
   ],
   imports: [
     AccordionModule,

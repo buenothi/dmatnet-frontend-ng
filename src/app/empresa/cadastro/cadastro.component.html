@@ -7,8 +7,8 @@
         (deleteClickEvent)="onDeleteClick()"></app-toolbar>
     <p-accordion>
         <p-accordionTab header="Dados Atuais" [selected]="true">
-            <app-form-editar *ngIf="isEditarForm"></app-form-editar>
-            <app-form-exibir *ngIf="!isEditarForm"></app-form-exibir>
+            <app-cad-form-editar *ngIf="isEditarForm"></app-cad-form-editar>
+            <app-cad-form-exibir *ngIf="!isEditarForm"></app-cad-form-exibir>
         </p-accordionTab>
         <p-accordionTab header="Histórico">
         </p-accordionTab>

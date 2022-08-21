@@ -36,6 +36,7 @@ export class CadastroComponent implements OnInit {
     this.isDeleteButtonDisabled = false;
     this.empresaForm.disableTabContato = true;
     this.empresaForm.disableTabEndereco = true;
+    this.empresaForm.disableTabEstabelecimento = true;
   }
 
   onCancelarClick(): void {
@@ -46,6 +47,7 @@ export class CadastroComponent implements OnInit {
     this.isDeleteButtonDisabled = true;
     this.empresaForm.disableTabContato = false;
     this.empresaForm.disableTabEndereco = false;
+    this.empresaForm.disableTabEstabelecimento = false;
   }
 
   onSalvarClick(): void {
@@ -56,6 +58,7 @@ export class CadastroComponent implements OnInit {
     this.isDeleteButtonDisabled = true;
     this.empresaForm.disableTabContato = false;
     this.empresaForm.disableTabEndereco = false;
+    this.empresaForm.disableTabEstabelecimento = false;
   }
 
   onDeleteClick(): void {
@@ -66,6 +69,7 @@ export class CadastroComponent implements OnInit {
     this.isDeleteButtonDisabled = true;
     this.empresaForm.disableTabContato = false;
     this.empresaForm.disableTabEndereco = false;
+    this.empresaForm.disableTabEstabelecimento = false;
   }
 
 }

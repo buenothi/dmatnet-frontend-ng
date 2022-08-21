@@ -10,6 +10,7 @@ export class EmpresaFormComponent implements OnInit {
   disableTabCadastro = false;
   disableTabEndereco = false;
   disableTabContato = false;
+  disableTabEstabelecimento= false;
 
   constructor() { }
 
