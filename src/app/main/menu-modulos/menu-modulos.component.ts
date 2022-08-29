@@ -17,28 +17,9 @@ export class MenuModulosComponent implements OnInit {
   textoMenuBotao = 'Menu'
 
   cssBtnMenu = 'botao menuBotao'
-  cssBtnHome = 'botao menuBotaoSelecionado'
-  cssBtnEmpresa = 'botao menuBotao'
-  cssBtnUsuario = 'botao menuBotao'
-  cssBtnRegAmbiental = 'botao menuBotao'
-  cssBtnSaudeTrabalho = 'botao menuBotao'
-  cssBtnDocLegais = 'botao menuBotao'
-  cssBtnAcidentes = 'botao menuBotao'
-  cssBtnEqProtecao = 'botao menuBotao'
-  cssBtnFerramentas = 'botao menuBotao'
-  cssBtnTreinamento = 'botao menuBotao'
 
   ngOnInit(): void {
-    this.cssBtnHome = 'botao menuBotaoSelecionado'
-    this.cssBtnEmpresa = 'botao menuBotao'
-    this.cssBtnUsuario = 'botao menuBotao'
-    this.cssBtnRegAmbiental = 'botao menuBotao'
-    this.cssBtnSaudeTrabalho = 'botao menuBotao'
-    this.cssBtnDocLegais = 'botao menuBotao'
-    this.cssBtnAcidentes = 'botao menuBotao'
-    this.cssBtnEqProtecao = 'botao menuBotao'
-    this.cssBtnFerramentas = 'botao menuBotao'
-    this.cssBtnTreinamento = 'botao menuBotao'
+    console.log("Menu carregado")
   }
 
   openMenu(): void {
@@ -54,60 +35,6 @@ export class MenuModulosComponent implements OnInit {
       this.textoMenuBotao = 'Menu'
       this.cssBtnMenu = 'botao menuBotao'
       this.mainComponent.changeConteudo()
-    }
-  }
-
-  onClickBtn(moduloNome:string):void {
-    switch (moduloNome) {
-      case 'home':
-        this.ngOnInit();
-        this.cssBtnHome = 'botao menuBotaoSelecionado';
-        break;
-      case 'empresa':
-        this.ngOnInit();
-        this.cssBtnHome = 'botao menuBotao'
-        this.cssBtnEmpresa = 'botao menuBotaoSelecionado';
-        break;
-      case 'usuario':
-        this.ngOnInit();
-        this.cssBtnHome = 'botao menuBotao'
-        this.cssBtnUsuario = 'botao menuBotaoSelecionado';
-        break;
-      case 'ambiental':
-        this.ngOnInit();
-        this.cssBtnHome = 'botao menuBotao'
-        this.cssBtnRegAmbiental = 'botao menuBotaoSelecionado';
-        break;
-      case 'saude':
-        this.ngOnInit();
-        this.cssBtnHome = 'botao menuBotao'
-        this.cssBtnSaudeTrabalho = 'botao menuBotaoSelecionado';
-        break;
-      case 'documentos':
-        this.ngOnInit();
-        this.cssBtnHome = 'botao menuBotao'
-        this.cssBtnDocLegais = 'botao menuBotaoSelecionado';
-        break;
-      case 'acidente':
-        this.ngOnInit();
-        this.cssBtnHome = 'botao menuBotao'
-        this.cssBtnAcidentes = 'botao menuBotaoSelecionado';
-        break;
-      case 'eqpto':
-        this.ngOnInit();
-        this.cssBtnHome = 'botao menuBotao'
-        this.cssBtnEqProtecao = 'botao menuBotaoSelecionado';
-        break;
-      case 'ferramentas':
-        this.ngOnInit();
-        this.cssBtnHome = 'botao menuBotao'
-        this.cssBtnFerramentas = 'botao menuBotaoSelecionado';
-        break;
-      case 'treinamento':
-        this.ngOnInit();
-        this.cssBtnHome = 'botao menuBotao'
-        this.cssBtnTreinamento = 'botao menuBotaoSelecionado';
-        break;
     }
   }
 

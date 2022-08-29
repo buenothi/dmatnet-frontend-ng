@@ -34,8 +34,9 @@ export class EnderecoComponent implements OnInit {
     this.isSalvarButtonDisabled = false;
     this.isNovoButtonDisabled = true;
     this.isDeleteButtonDisabled = false;
+    this.empresaForm.disableTabCadastro = true;
     this.empresaForm.disableTabContato = true;
-    this.empresaForm.disableTabEndereco = true;
+    this.empresaForm.disableTabEndereco = false;
     this.empresaForm.disableTabEstabelecimento = true;
   }
 
@@ -45,6 +46,7 @@ export class EnderecoComponent implements OnInit {
     this.isSalvarButtonDisabled = true;
     this.isNovoButtonDisabled = false;
     this.isDeleteButtonDisabled = true;
+    this.empresaForm.disableTabCadastro = false;
     this.empresaForm.disableTabContato = false;
     this.empresaForm.disableTabEndereco = false;
     this.empresaForm.disableTabEstabelecimento = false;
@@ -56,6 +58,7 @@ export class EnderecoComponent implements OnInit {
     this.isSalvarButtonDisabled = true;
     this.isNovoButtonDisabled = false;
     this.isDeleteButtonDisabled = true;
+    this.empresaForm.disableTabCadastro = false;
     this.empresaForm.disableTabContato = false;
     this.empresaForm.disableTabEndereco = false;
     this.empresaForm.disableTabEstabelecimento = false;
@@ -67,6 +70,7 @@ export class EnderecoComponent implements OnInit {
     this.isSalvarButtonDisabled = true;
     this.isNovoButtonDisabled = false;
     this.isDeleteButtonDisabled = true;
+    this.empresaForm.disableTabCadastro = false;
     this.empresaForm.disableTabContato = false;
     this.empresaForm.disableTabEndereco = false;
     this.empresaForm.disableTabEstabelecimento = false;

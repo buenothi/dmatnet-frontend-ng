@@ -11,6 +11,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { InputMaskModule } from 'primeng/inputmask';
 import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
+import { OrderListModule } from 'primeng/orderlist';
+
 import { CustomsComponentsModule } from '../shared/customs-components/customs-components.module';
 import { CadFormEditarComponent } from './cadastro/cad-form-editar/cad-form-editar.component';
 import { CadFormExibirComponent } from './cadastro/cad-form-exibir/cad-form-exibir.component';
@@ -20,6 +22,8 @@ import { ContatoComponent } from './contato/contato.component';
 import { EstabelecimentoComponent } from './estabelecimento/estabelecimento.component';
 import { EndFormExibirComponent } from './endereco/end-form-exibir/end-form-exibir.component';
 import { EndFormEditarComponent } from './endereco/end-form-editar/end-form-editar.component';
+import { ContFormEditarComponent } from './contato/cont-form-editar/cont-form-editar.component';
+import { ContFormExibirComponent } from './contato/cont-form-exibir/cont-form-exibir.component';
 
 
 @NgModule({
@@ -32,7 +36,9 @@ import { EndFormEditarComponent } from './endereco/end-form-editar/end-form-edit
     CadFormEditarComponent,
     CadFormExibirComponent,
     EndFormExibirComponent,
-    EndFormEditarComponent
+    EndFormEditarComponent,
+    ContFormEditarComponent,
+    ContFormExibirComponent
   ],
   imports: [
     AccordionModule,
@@ -46,7 +52,8 @@ import { EndFormEditarComponent } from './endereco/end-form-editar/end-form-edit
     CalendarModule,
     DropdownModule,
     CustomsComponentsModule,
-    FormsModule
+    FormsModule,
+    OrderListModule
   ]
 })
 export class EmpresaModule { }

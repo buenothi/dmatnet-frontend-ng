@@ -14,19 +14,19 @@ export class ToolbarComponent implements OnInit {
   cancelarDisabled: boolean = true;
 
   @Input()
-  salvarDisabled = true;
+  salvarDisabled: boolean = true;
 
   @Input()
-  novoDisabled = false;
+  novoDisabled: boolean = false;
 
   @Input()
-  printDisabled = true;
+  printDisabled: boolean = true;
 
   @Input()
-  printButtonHidden = true;
+  printButtonHidden: boolean = true;
 
   @Input()
-  deleteDisabled = true;
+  deleteDisabled: boolean = true;
 
   @Output()
   editarClickEvent = new EventEmitter();
@@ -67,11 +67,11 @@ export class ToolbarComponent implements OnInit {
     this.novoClickEvent.emit("novo");
   }
 
-  onPrintClick(): void{
+  onPrintClick(): void {
     this.printClickEvent.emit("print");
   }
 
-  onDeleteClick(): void{
+  onDeleteClick(): void {
     this.deleteClickEvent.emit("delete");
   }
 
