@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { EmpresaFormComponent } from '../empresa-form/empresa-form.component';
 
 @Component({
@@ -8,14 +8,14 @@ import { EmpresaFormComponent } from '../empresa-form/empresa-form.component';
 })
 export class EnderecoComponent implements OnInit {
 
-  isEditarForm: boolean = false;
-  isEditarButtonDisabled = true;
-  isCancelarButtonDisabled = true;
-  isSalvarButtonDisabled = true;
-  isNovoButtonDisabled = false;
-  isPrintButtonDisabled = true;
-  isDeleteButtonDisabled = true;
-
+  @Input() isEditarForm: boolean = false;
+  @Input() isEditarButtonDisabled: boolean = true;
+  @Input() isCancelarButtonDisabled: boolean = true;
+  @Input() isSalvarButtonDisabled: boolean = true;
+  @Input() isNovoButtonDisabled: boolean = false;
+  @Input() isPrintButtonDisabled: boolean = true;
+  @Input() isDeleteButtonDisabled: boolean = true;
+  @Input() isToolBarHidden: boolean = false;
 
   constructor(
     private empresaForm: EmpresaFormComponent

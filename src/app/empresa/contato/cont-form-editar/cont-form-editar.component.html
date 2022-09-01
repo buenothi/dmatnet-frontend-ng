@@ -1,25 +1,208 @@
-<div style="display: inline-flex; width: 100%;">
-    <div style="width: 30%; height: 100%; display: inline; margin-left: 10px; margin-right: 10px;">
-        <p-orderList filterBy="nome">
-            <ng-template let-car pTemplate="item">
-            </ng-template>
-        </p-orderList>
-    </div>
-
-    <div style="width: 60%; height: 100%; display: inline; margin-left: 10px; margin-right: 10px;">
-        <p-tabView >
-            <p-tabPanel header="Dados">
-            </p-tabPanel>
-            <p-tabPanel header="Documentos">
-            </p-tabPanel>
-            <p-tabPanel header="Endereço">
-            </p-tabPanel>
-            <p-tabPanel header="Contatos">
-            </p-tabPanel>
-            <p-tabPanel header="Logins">
-            </p-tabPanel>
-            <p-tabPanel header="Empresa">
-            </p-tabPanel>
-        </p-tabView>
-    </div>
-</div>
+<form>
+    <p-tabView>
+        <p-tabPanel header="Contatos">
+            <p-panel header="Contatos">
+                <p-tabView>
+                    <p-tabPanel header="Email">
+                        <div class="card">
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Email:</label>
+                                <input id="float-input" type="text" pInputText [size]="35">
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Tipo
+                                    Email:</label>
+                                <p-dropdown></p-dropdown>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">É email
+                                    principal?</label>
+                                <p-toggleButton onIcon="pi pi-check" offIcon="pi pi-times"></p-toggleButton>
+                            </div>
+                        </div>
+                        <p-table responsiveLayout="scroll">
+                            <ng-template pTemplate="header">
+                                <tr>
+                                    <th [width]="300">Email</th>
+                                    <th>Tipo Email</th>
+                                    <th>Principal?</th>
+                                    <th>Comandos</th>
+                                </tr>
+                            </ng-template>
+                        </p-table>
+                    </p-tabPanel>
+                    <p-tabPanel header="Telefone">
+                        <div class="card">
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Telefone:</label>
+                                <p-inputMask mask="+55 (99) 99999-9999" [size]="18"></p-inputMask>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Tipo
+                                    Telefone:</label>
+                                <p-dropdown></p-dropdown>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">É telefone
+                                    principal?</label>
+                                <p-toggleButton onIcon="pi pi-check" offIcon="pi pi-times"></p-toggleButton>
+                            </div>
+                        </div>
+                        <p-table responsiveLayout="scroll">
+                            <ng-template pTemplate="header">
+                                <tr>
+                                    <th [width]="300">Telefone</th>
+                                    <th>Tipo Telefone</th>
+                                    <th>Principal?</th>
+                                    <th>Comandos</th>
+                                </tr>
+                            </ng-template>
+                        </p-table>
+                    </p-tabPanel>
+                </p-tabView>
+            </p-panel>
+        </p-tabPanel>
+        <p-tabPanel header="Dados">
+            <p-panel header="Dados">
+                <div class="card">
+                    <div class="field grid">
+                        <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data do Cadastro:</label>
+                        <p-calendar [showButtonBar]="true"></p-calendar>
+                    </div>
+                    <div class="field grid">
+                        <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Nome:</label>
+                        <input id="float-input" type="text" pInputText [size]="35">
+                    </div>
+                    <div class="field grid">
+                        <label class="col-12 mb-2 md:col-4 md:mb-0">Gênero:</label>
+                        <p-dropdown></p-dropdown>
+                    </div>
+                </div>
+            </p-panel>
+        </p-tabPanel>
+        <p-tabPanel header="Documentos">
+            <p-panel header="Documentos">
+                <p-tabView>
+                    <p-tabPanel header="RG">
+                        <div class="card">
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Número do
+                                    RG:*</label>
+                                <input id="float-input" type="text" pInputText [size]="35">
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Orgão
+                                    Expedidor:*</label>
+                                <input id="float-input" type="text" pInputText [size]="35">
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data de
+                                    Expedição:*</label>
+                                <p-calendar [showButtonBar]="true"></p-calendar>
+                            </div>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="CPF">
+                        <div class="card">
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Número do
+                                    CPF:*</label>
+                                <input id="float-input" type="text" pInputText [size]="35">
+                            </div>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="RIC">
+                        <div class="card">
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Número do
+                                    RIC:</label>
+                                <input id="float-input" type="text" pInputText [size]="35">
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Orgão
+                                    Expedidor:</label>
+                                <input id="float-input" type="text" pInputText [size]="35">
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data de
+                                    Expedição:</label>
+                                <p-calendar [showButtonBar]="true"></p-calendar>
+                            </div>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="RNE">
+                        <div class="card">
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Número do
+                                    RNE:</label>
+                                <input id="float-input" type="text" pInputText [size]="35">
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Orgão
+                                    Expedidor:</label>
+                                <input id="float-input" type="text" pInputText [size]="35">
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data de
+                                    Expedição:</label>
+                                <p-calendar [showButtonBar]="true"></p-calendar>
+                            </div>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="CNH">
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Número da
+                                CNH:</label>
+                            <input id="float-input" type="text" pInputText [size]="35">
+                        </div>
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">UF:</label>
+                            <input id="float-input" type="text" pInputText [size]="2">
+                        </div>
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data de
+                                Expedição:</label>
+                            <p-calendar [showButtonBar]="true"></p-calendar>
+                        </div>
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data de
+                                Validade:</label>
+                            <p-calendar [showButtonBar]="true"></p-calendar>
+                        </div>
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data da
+                                Primeira:</label>
+                            <p-calendar [showButtonBar]="true"></p-calendar>
+                        </div>
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Categoria:</label>
+                            <input id="float-input" type="text" pInputText [size]="2">
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="Registro Profissional">
+                        <div class="card">
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Número do
+                                    Registro:</label>
+                                <input id="float-input" type="text" pInputText [size]="35">
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Profissão:</label>
+                                <input id="float-input" type="text" pInputText [size]="35">
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Órgão:</label>
+                                <p-dropdown></p-dropdown>
+                            </div>
+                        </div>
+                    </p-tabPanel>
+                </p-tabView>
+            </p-panel>
+        </p-tabPanel>
+        <p-tabPanel header="Endereço">
+            <p-panel header="Endereço">
+                <app-end-form-editar></app-end-form-editar>
+            </p-panel>
+        </p-tabPanel>
+    </p-tabView>
+</form>

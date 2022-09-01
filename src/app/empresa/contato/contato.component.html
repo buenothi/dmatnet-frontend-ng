@@ -1,5 +1,22 @@
 <p-panel header="Contatos">
-    <app-toolbar></app-toolbar>
-    <app-cont-form-editar></app-cont-form-editar>
-    <app-cont-form-exibir></app-cont-form-exibir>
+    <app-toolbar [printButtonHidden]=false [editarDisabled]="isEditarButtonDisabled"
+        [cancelarDisabled]="isCancelarButtonDisabled" [salvarDisabled]="isSalvarButtonDisabled"
+        [novoDisabled]="isNovoButtonDisabled" [printDisabled]="isPrintButtonDisabled"
+        [deleteDisabled]="isDeleteButtonDisabled" (novoClickEvent)="onNovoClick()"
+        (cancelarClickEvent)="onCancelarClick()" (salvarClickEvent)="onSalvarClick()"
+        (deleteClickEvent)="onDeleteClick()"></app-toolbar>
+
+    <div style="display: inline-flex; width: 100%;">
+        <div style="width: 30%; height: 100%; display: inline; margin-left: 10px; margin-right: 10px;">
+            <p-orderList filterBy="nome">
+                <ng-template let-car pTemplate="item">
+                </ng-template>
+            </p-orderList>
+        </div>
+        <div style="width: 70%; height: 100%; display: inline; margin-left: 10px; margin-right: 10px;">
+            <app-cont-form-editar *ngIf="isEditarForm"></app-cont-form-editar>
+            <app-cont-form-exibir *ngIf="!isEditarForm"></app-cont-form-exibir>
+        </div>
+    </div>
+
 </p-panel>

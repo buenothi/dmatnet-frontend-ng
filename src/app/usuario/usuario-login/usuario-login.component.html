@@ -1,0 +1,35 @@
+<p-panel header="Login">
+    <div class="card">
+        <p-tabView>
+            <p-tabPanel header="Usuário">
+                <div class="card">
+                    <div class="field grid">
+                        <label for="float-input"
+                            class="col-12 mb-2 md:col-2 md:mb-0">Usuário:</label>
+                        <input id="float-input" type="text" pInputText [size]="35">
+                    </div>
+                </div>
+            </p-tabPanel>
+            <p-tabPanel header="Permissões">
+                <p>Utilize esta ferramenta como opção para atribuir mais de uma permissão para o
+                    novo usuario. As
+                    permissões disponíveis ao usuário são listadas à esquerda e as permissões
+                    atribuídas ao Grupo
+                    Selecionado são listadas à direita.</p>
+                <p-pickList [source]="list1" [target]="list2">
+
+                </p-pickList>
+            </p-tabPanel>
+            <p-tabPanel header="Empresa">
+                <p-panel header="Empresa">
+                    <p>Utilize esta ferramenta como opção para atribuir mais de uma empresa para o novo usuario. As
+                        empresas disponíveis ao usuário são listadas à esquerda e as empresas atribuídas ao Grupo
+                        Selecionado são listadas à direita.</p>
+                    <p-pickList [source]="list1" [target]="list2">
+
+                    </p-pickList>
+                </p-panel>
+            </p-tabPanel>
+        </p-tabView>
+    </div>
+</p-panel>

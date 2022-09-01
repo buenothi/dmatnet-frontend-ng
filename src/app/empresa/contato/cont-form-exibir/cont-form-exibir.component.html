@@ -1,1 +1,208 @@
-<p>cont-form-exibir works!</p>
+<form>
+    <p-tabView>
+        <p-tabPanel header="Contatos">
+            <p-panel header="Contatos">
+                <p-tabView>
+                    <p-tabPanel header="Email">
+                        <div class="card">
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Email:</label>
+                                <p>Teste</p>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Tipo
+                                    Email:</label>
+                                <p>Teste</p>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">É email
+                                    principal?</label>
+                                <p>Teste</p>
+                            </div>
+                        </div>
+                        <p-table responsiveLayout="scroll">
+                            <ng-template pTemplate="header">
+                                <tr>
+                                    <th [width]="300">Email</th>
+                                    <th>Tipo Email</th>
+                                    <th>Principal?</th>
+                                    <th>Comandos</th>
+                                </tr>
+                            </ng-template>
+                        </p-table>
+                    </p-tabPanel>
+                    <p-tabPanel header="Telefone">
+                        <div class="card">
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Telefone:</label>
+                                <p>Teste</p>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Tipo
+                                    Telefone:</label>
+                                <p>Teste</p>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">É telefone
+                                    principal?</label>
+                                <p>Teste</p>
+                            </div>
+                        </div>
+                        <p-table responsiveLayout="scroll">
+                            <ng-template pTemplate="header">
+                                <tr>
+                                    <th [width]="300">Telefone</th>
+                                    <th>Tipo Telefone</th>
+                                    <th>Principal?</th>
+                                    <th>Comandos</th>
+                                </tr>
+                            </ng-template>
+                        </p-table>
+                    </p-tabPanel>
+                </p-tabView>
+            </p-panel>
+        </p-tabPanel>
+        <p-tabPanel header="Dados">
+            <p-panel header="Dados">
+                <div class="card">
+                    <div class="field grid">
+                        <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data do Cadastro:</label>
+                        <p>Teste</p>
+                    </div>
+                    <div class="field grid">
+                        <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Nome:</label>
+                        <p>Teste</p>
+                    </div>
+                    <div class="field grid">
+                        <label class="col-12 mb-2 md:col-4 md:mb-0">Gênero:</label>
+                        <p>Teste</p>
+                    </div>
+                </div>
+            </p-panel>
+        </p-tabPanel>
+        <p-tabPanel header="Documentos">
+            <p-panel header="Documentos">
+                <p-tabView>
+                    <p-tabPanel header="RG">
+                        <div class="card">
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Número do
+                                    RG:*</label>
+                                <p>Teste</p>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Orgão
+                                    Expedidor:*</label>
+                                <p>Teste</p>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data de
+                                    Expedição:*</label>
+                                <p>Teste</p>
+                            </div>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="CPF">
+                        <div class="card">
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Número do
+                                    CPF:*</label>
+                                <p>Teste</p>
+                            </div>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="RIC">
+                        <div class="card">
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Número do
+                                    RIC:</label>
+                                <p>Teste</p>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Orgão
+                                    Expedidor:</label>
+                                <p>Teste</p>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data de
+                                    Expedição:</label>
+                                <p>Teste</p>
+                            </div>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="RNE">
+                        <div class="card">
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Número do
+                                    RNE:</label>
+                                <p>Teste</p>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Orgão
+                                    Expedidor:</label>
+                                <p>Teste</p>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data de
+                                    Expedição:</label>
+                                <p>Teste</p>
+                            </div>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="CNH">
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Número da
+                                CNH:</label>
+                            <p>Teste</p>
+                        </div>
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">UF:</label>
+                            <p>Teste</p>
+                        </div>
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data de
+                                Expedição:</label>
+                            <p>Teste</p>
+                        </div>
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data de
+                                Validade:</label>
+                            <p>Teste</p>
+                        </div>
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data da
+                                Primeira:</label>
+                            <p>Teste</p>
+                        </div>
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Categoria:</label>
+                            <p>Teste</p>
+                        </div>
+                    </p-tabPanel>
+                    <p-tabPanel header="Registro Profissional">
+                        <div class="card">
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Número do
+                                    Registro:</label>
+                                <p>Teste</p>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Profissão:</label>
+                                <p>Teste</p>
+                            </div>
+                            <div class="field grid">
+                                <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Órgão:</label>
+                                <p>Teste</p>
+                            </div>
+                        </div>
+                    </p-tabPanel>
+                </p-tabView>
+            </p-panel>
+        </p-tabPanel>
+        <p-tabPanel header="Endereço">
+            <p-panel header="Endereço">
+                <app-end-form-editar></app-end-form-editar>
+            </p-panel>
+        </p-tabPanel>
+    </p-tabView>
+</form>

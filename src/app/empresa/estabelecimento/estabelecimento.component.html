@@ -1,1 +1,10 @@
-<p>estabelecimento works!</p>
+<p-panel header="Estabelecimentos">
+    <app-toolbar [printButtonHidden]=false [editarDisabled]="isEditarButtonDisabled"
+        [cancelarDisabled]="isCancelarButtonDisabled" [salvarDisabled]="isSalvarButtonDisabled"
+        [novoDisabled]="isNovoButtonDisabled" [printDisabled]="isPrintButtonDisabled"
+        [deleteDisabled]="isDeleteButtonDisabled" (novoClickEvent)="onNovoClick()"
+        (cancelarClickEvent)="onCancelarClick()" (salvarClickEvent)="onSalvarClick()"
+        (deleteClickEvent)="onDeleteClick()"></app-toolbar>
+    <app-est-form-editar *ngIf="isEditarForm"></app-est-form-editar>
+    <app-est-form-exibir *ngIf="!isEditarForm"></app-est-form-exibir>
+</p-panel>

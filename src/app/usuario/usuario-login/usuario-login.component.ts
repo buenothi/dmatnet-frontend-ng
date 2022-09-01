@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-cont-form-editar',
-  templateUrl: './cont-form-editar.component.html',
-  styleUrls: ['./cont-form-editar.component.css']
+  selector: 'app-usuario-login',
+  templateUrl: './usuario-login.component.html',
+  styleUrls: ['./usuario-login.component.css']
 })
-export class ContFormEditarComponent implements OnInit {
-
+export class UsuarioLoginComponent implements OnInit {
 
   list1: any[] = [];
   list2: any[] = [];

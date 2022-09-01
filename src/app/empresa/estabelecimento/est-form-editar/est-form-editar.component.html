@@ -1,0 +1,116 @@
+<div style="display: inline-flex; width: 100%;">
+    <div style="width: 30%; height: 100%; display: inline; margin-left: 10px; margin-right: 10px;">
+        <p-orderList filterBy="nome">
+            <ng-template let-car pTemplate="item">
+            </ng-template>
+        </p-orderList>
+    </div>
+    <div style="width: 70%; height: 100%; display: inline; margin-left: 10px; margin-right: 10px;">
+        <p-tabView>
+            <p-tabPanel header="Dados">
+                <div class="card">
+                    <div class="field grid">
+                        <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Código eSocial:</label>
+                        <input id="float-input" type="text" pInputText [size]="35">
+                    </div>
+                    <div class="field grid">
+                        <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Nome do Local:</label>
+                        <input id="float-input" type="text" pInputText [size]="35">
+                    </div>
+                    <div class="field grid">
+                        <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">CNAE Preponderante:</label>
+                        <p-inputMask mask="99.99.9-99"></p-inputMask>
+                    </div>
+                    <div class="field grid">
+                        <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Aliquota GILRAT</label>
+                        <input id="float-input" type="text" pInputText [size]="2">
+                    </div>
+                    <div class="field grid">
+                        <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data Início:</label>
+                        <p-calendar></p-calendar>
+                    </div>
+                    <div class="field grid">
+                        <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Data Fim:</label>
+                        <p-calendar></p-calendar>
+                    </div>
+                </div>
+            </p-tabPanel>
+            <p-tabPanel header="Setores">
+                <p-toolbar class="margem-vert">
+                    <p-button label="Adicionar Setor" icon="pi pi-plus" class="botoesMenu" (onClick)="showDialogSetor()">
+                    </p-button>
+                </p-toolbar>
+                <p-dialog header="Adicionar Setor" [(visible)]="dialogSetor" [modal]="true">
+                    <div class="card" style="width: 480px;">
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Setor Nome:</label>
+                            <input id="float-input" type="text" pInputText [size]="35">
+                        </div>
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Descrição:</label>
+                            <textarea pInputTextarea [cols]="34"></textarea>
+                        </div>
+                        <div class="field grid">
+                            <i class="col-12 mb-2 md:col-4 md:mb-0"></i>
+                            <p-button label="Salvar" icon="pi pi-save" class="botoesMenu margem-vert"></p-button>
+                            <p-button icon="pi pi-times" class="botoesMenu margem-vert"></p-button>
+                        </div>
+                    </div>
+                </p-dialog>
+                <p-table responsiveLayout="scroll" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
+                currentPageReportTemplate="Exibindo {first} até {last} de {totalRecords} setores" [rowsPerPageOptions]="[10,25,50]">>
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th [width]="300">Nome</th>
+                            <th>Descrição</th>
+                            <th [width]="20">Comandos</th>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </p-tabPanel>
+            <p-tabPanel header="Funções">
+                <p-toolbar class="margem-vert">
+                    <p-button label="Adicionar Função" icon="pi pi-plus" class="botoesMenu" (onClick)="showDialogFuncao()">
+                    </p-button>
+                </p-toolbar>
+                <p-dialog header="Adicionar Função" [(visible)]="dialogFuncao" [modal]="true">
+                    <div class="card" style="width: 480px;">
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Nome Função:</label>
+                            <input id="float-input" type="text" pInputText [size]="35">
+                        </div>
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Descrição da Função:</label>
+                            <textarea pInputTextarea [cols]="34"></textarea>
+                        </div>
+                         <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">Codigo eSocial:</label>
+                            <input id="float-input" type="text" pInputText [size]="35">
+                        </div>
+                        <div class="field grid">
+                            <label for="float-input" class="col-12 mb-2 md:col-4 md:mb-0">CBO:</label>
+                            <p-inputMask mask="99.99.9-99"></p-inputMask>
+                        </div>
+                        <div class="field grid">
+                            <i class="col-12 mb-2 md:col-4 md:mb-0"></i>
+                            <p-button label="Salvar" icon="pi pi-save" class="botoesMenu margem-vert"></p-button>
+                            <p-button icon="pi pi-times" class="botoesMenu margem-vert"></p-button>
+                        </div>
+                    </div>
+                </p-dialog>
+                <p-table responsiveLayout="scroll" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
+                currentPageReportTemplate="Exibindo {first} até {last} de {totalRecords} funções" [rowsPerPageOptions]="[10,25,50]">>
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th [width]="300">Nome Função</th>
+                            <th [width]="300">Descrição</th>
+                            <th>Código eSocial</th>
+                            <th>CBO</th>
+                            <th [width]="20">Comandos</th>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </p-tabPanel>
+        </p-tabView>
+    </div>
+</div>

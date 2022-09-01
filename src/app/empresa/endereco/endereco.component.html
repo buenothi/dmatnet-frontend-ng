@@ -4,7 +4,7 @@
         [novoDisabled]="isNovoButtonDisabled" [printDisabled]="isPrintButtonDisabled"
         [deleteDisabled]="isDeleteButtonDisabled" (novoClickEvent)="onNovoClick()" 
         (cancelarClickEvent)="onCancelarClick()" (salvarClickEvent)="onSalvarClick()"
-        (deleteClickEvent)="onDeleteClick()"></app-toolbar>
+        (deleteClickEvent)="onDeleteClick()" [hidden]="isToolBarHidden"></app-toolbar>
     <p-accordion>
         <p-accordionTab header="Endereço Atual" [selected]="true">
             <app-end-form-editar *ngIf="isEditarForm"></app-end-form-editar>
