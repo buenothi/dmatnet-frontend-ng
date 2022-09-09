@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-empresa-form',
@@ -12,9 +13,10 @@ export class EmpresaFormComponent implements OnInit {
   disableTabContato = false;
   disableTabEstabelecimento= false;
 
-  constructor() { }
+  constructor(private primengConfig: PrimeNGConfig) { }
 
   ngOnInit(): void {
+    this.primengConfig.ripple = true;
   }
 
 }

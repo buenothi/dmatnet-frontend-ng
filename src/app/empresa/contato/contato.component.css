@@ -1,0 +1,18 @@
+.div-principal {
+    display: inline-flex;
+    width: 100%;
+}
+
+.seletor {
+    width: 300px;
+    height: 100%;
+    display: inline;
+    margin-right: 10px;
+}
+
+.item-selecionado {
+    width: 70%;
+    height: 100%;
+    display: inline;
+    margin-left: 10px;
+}

@@ -9,13 +9,19 @@ import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { PanelModule } from 'primeng/panel';
 import { DialogModule } from 'primeng/dialog';
+import { OrderListModule } from 'primeng/orderlist';
+import { ToolbarModule } from 'primeng/toolbar';
+
+import { SeletorDeEmpresaComponent } from './seletor-de-empresa/seletor-de-empresa.component';
+import { CustomsComponentsModule } from '../shared/customs-components/customs-components.module';
 
 
 @NgModule({
   declarations: [
     MainComponent,
     BarraPrincipalComponent,
-    MenuModulosComponent
+    MenuModulosComponent,
+    SeletorDeEmpresaComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +29,10 @@ import { DialogModule } from 'primeng/dialog';
     SidebarModule,
     PanelModule,
     DialogModule,
-    MainRoutingModule
+    OrderListModule,
+    CustomsComponentsModule,
+    MainRoutingModule,
+    ToolbarModule
   ]
 })
 export class MainModule { }

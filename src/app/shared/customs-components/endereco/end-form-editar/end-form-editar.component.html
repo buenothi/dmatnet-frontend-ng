@@ -1,0 +1,38 @@
+<div class="card">
+    <form>
+        <div class="field grid">
+            <label for="data-cadastro" class="col-12 mb-2 md:col-2 md:mb-0">Data do Cadastro:</label>
+            <p-calendar id="data-cadastro" [showButtonBar]="true"></p-calendar>
+        </div>
+        <div class="field grid">
+            <label for="logradouro" class="col-12 mb-2 md:col-2 md:mb-0">Logradouro:</label>
+            <p-dropdown></p-dropdown>
+            <input id="logradouro" type="text" pInputText [size]="38">
+        </div>
+        <div class="field grid">
+            <label for="numero" class="col-12 mb-2 md:col-2 md:mb-0">Número:</label>
+            <input id="numero" type="text" pInputText [size]="10">
+        </div>
+        <div class="field grid">
+            <label for="complemento" class="col-12 mb-2 md:col-2 md:mb-0">Complemento:</label>
+            <input id="complemento" type="text" pInputText [size]="40">
+        </div>
+        <div class="field grid">
+            <label for="bairro" class="col-12 mb-2 md:col-2 md:mb-0">Bairro:</label>
+            <input id="bairro" type="text" pInputText [size]="40">
+        </div>
+        <div class="field grid">
+            <label for="cep" class="col-12 mb-2 md:col-2 md:mb-0">CEP:</label>
+            <p-inputMask id="cep" mask="99999-999" [size]="9"></p-inputMask>
+        </div>
+        <div class="field grid">
+            <label for="caixa-postal" class="col-12 mb-2 md:col-2 md:mb-0">Caixa Postal:</label>
+            <input id="caixa-postal" type="text" pInputText [size]="20">
+        </div>
+        <div class="field grid">
+            <label for="cidade" class="col-12 mb-2 md:col-2 md:mb-0">Estado/Cidade:</label>
+            <p-dropdown id="estado" [itemSize]="2"></p-dropdown>
+            <input id="cidade" type="text" pInputText [size]="38">
+        </div>
+    </form>
+</div>

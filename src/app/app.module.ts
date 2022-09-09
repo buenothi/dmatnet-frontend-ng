@@ -12,6 +12,8 @@ import { ButtonModule } from 'primeng/button';
 import { CheckboxModule } from 'primeng/checkbox';
 import { FormsModule } from '@angular/forms';
 import { LoginModule } from './login/login.module';
+import { AuthService } from './shared/service/auth.service';
+import { AuthGuard } from './shared/guard/auth.guard';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,10 @@ import { LoginModule } from './login/login.module';
     LoginModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    AuthGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

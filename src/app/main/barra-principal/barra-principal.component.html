@@ -22,9 +22,9 @@
         </div>
     </div>
 </div>
-<p-sidebar [(visible)]="display" position="right" style="z-index:1000" [modal]="false">
+<p-sidebar [(visible)]="display" position="right" [modal]="false">
     Content
 </p-sidebar>
-<p-dialog header="Title" [(visible)]="dialog" [modal]="true">
-    Content
+<p-dialog header="Seleção de Empresa" [(visible)]="dialog" [modal]="true">
+    <app-seletor-de-empresa></app-seletor-de-empresa>
 </p-dialog>

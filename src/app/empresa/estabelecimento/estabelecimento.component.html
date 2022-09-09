@@ -5,6 +5,13 @@
         [deleteDisabled]="isDeleteButtonDisabled" (novoClickEvent)="onNovoClick()"
         (cancelarClickEvent)="onCancelarClick()" (salvarClickEvent)="onSalvarClick()"
         (deleteClickEvent)="onDeleteClick()"></app-toolbar>
-    <app-est-form-editar *ngIf="isEditarForm"></app-est-form-editar>
-    <app-est-form-exibir *ngIf="!isEditarForm"></app-est-form-exibir>
+    <div class="div-principal">
+        <div class="seletor">
+            <app-data-selector></app-data-selector>
+        </div>
+        <div class="item-selecionado">
+            <app-est-form-editar *ngIf="isEditarForm"></app-est-form-editar>
+            <app-est-form-exibir *ngIf="!isEditarForm"></app-est-form-exibir>
+        </div>
+    </div>
 </p-panel>

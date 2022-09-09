@@ -1,0 +1,17 @@
+<p-table #dt1 [rows]="linhas" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" [paginator]="true"
+    styleClass="p-datatable-customers" [rowSelectable]="true">
+
+    <ng-template pTemplate="caption">
+        <div class="table-header">
+            <span class="p-input-icon-left">
+                <i class="pi pi-search"></i>
+                <input pInputText type="text" placeholder="Search keyword" [size]="tamanho" />
+            </span>
+        </div>
+    </ng-template>
+
+    <ng-template pTemplate="emptymessage">
+        <p class="texto_generico">Não há dados cadastrados, <br> clique em novo para inserir</p>
+    </ng-template>
+
+</p-table>
