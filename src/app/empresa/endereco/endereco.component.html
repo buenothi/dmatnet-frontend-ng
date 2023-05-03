@@ -1,16 +1,1 @@
-<p-panel header="Endereço">
-    <app-toolbar [printButtonHidden]=false [editarDisabled]="isEditarButtonDisabled"
-        [cancelarDisabled]="isCancelarButtonDisabled" [salvarDisabled]="isSalvarButtonDisabled"
-        [novoDisabled]="isNovoButtonDisabled" [printDisabled]="isPrintButtonDisabled"
-        [deleteDisabled]="isDeleteButtonDisabled" (novoClickEvent)="onNovoClick()" 
-        (cancelarClickEvent)="onCancelarClick()" (salvarClickEvent)="onSalvarClick()"
-        (deleteClickEvent)="onDeleteClick()" [hidden]="isToolBarHidden"></app-toolbar>
-    <p-accordion>
-        <p-accordionTab header="Endereço Atual" [selected]="true">
-            <app-end-form-editar *ngIf="isEditarForm"></app-end-form-editar>
-            <app-end-form-exibir *ngIf="!isEditarForm"></app-end-form-exibir>
-        </p-accordionTab>
-        <p-accordionTab header="Histórico">
-        </p-accordionTab>
-    </p-accordion>
-</p-panel>
+<p>endereco works!</p>

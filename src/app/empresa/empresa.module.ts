@@ -24,31 +24,27 @@ import { CustomsComponentsModule } from '../shared/customs-components/customs-co
 import { CadFormEditarComponent } from './cadastro/cad-form-editar/cad-form-editar.component';
 import { CadFormExibirComponent } from './cadastro/cad-form-exibir/cad-form-exibir.component';
 import { FormsModule } from '@angular/forms';
-import { EnderecoComponent } from './endereco/endereco.component';
 import { ContatoComponent } from './contato/contato.component';
 import { EstabelecimentoComponent } from './estabelecimento/estabelecimento.component';
-import { EndFormExibirComponent } from './endereco/end-form-exibir/end-form-exibir.component';
-import { EndFormEditarComponent } from './endereco/end-form-editar/end-form-editar.component';
 import { ContFormEditarComponent } from './contato/cont-form-editar/cont-form-editar.component';
 import { ContFormExibirComponent } from './contato/cont-form-exibir/cont-form-exibir.component';
 import { EstFormEditarComponent } from './estabelecimento/est-form-editar/est-form-editar.component';
 import { EstFormExibirComponent } from './estabelecimento/est-form-exibir/est-form-exibir.component';
+import { EnderecoComponent } from './endereco/endereco.component';
 
 @NgModule({
   declarations: [
     EmpresaFormComponent,
     CadastroComponent,
-    EnderecoComponent,
     ContatoComponent,
     EstabelecimentoComponent,
     CadFormEditarComponent,
     CadFormExibirComponent,
-    EndFormExibirComponent,
-    EndFormEditarComponent,
     ContFormEditarComponent,
     ContFormExibirComponent,
     EstFormEditarComponent,
-    EstFormExibirComponent
+    EstFormExibirComponent,
+    EnderecoComponent
   ],
   imports: [
     AccordionModule,
@@ -71,9 +67,6 @@ import { EstFormExibirComponent } from './estabelecimento/est-form-exibir/est-fo
     InputTextareaModule,
     DialogModule,
     TableModule
-  ],
-  exports: [
-    EnderecoComponent
   ]
 })
 export class EmpresaModule { }

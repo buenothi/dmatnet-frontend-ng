@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class EnderecoComponent implements OnInit {
 
-  @Input() isEditarForm:boolean = true;
+  @Input() isEditarForm:boolean = false;
 
   constructor() { }
 

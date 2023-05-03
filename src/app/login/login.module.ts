@@ -8,6 +8,7 @@ import { ButtonModule } from 'primeng/button';
 import { CheckboxModule } from 'primeng/checkbox';
 import { DialogLoginComponent } from './dialog-login/dialog-login.component';
 import { FormsModule } from '@angular/forms';
+import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FormsModule } from '@angular/forms';
     LoginRoutingModule,
     DialogModule,
     ButtonModule,
+    InputTextModule,
     CheckboxModule,
     FormsModule
   ]
